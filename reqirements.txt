@@ -1,0 +1,4 @@
+GDAL==3.0.2
+Pillow==8.4.0
+matplotlib==3.5.0
+pysimplegui==4.56.0
