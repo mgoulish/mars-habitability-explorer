@@ -1,4 +1,4 @@
 #! /bin/bash
 
-./img2rgb.py
+./img2rgb.py ../../data/mola/data.jpg
 

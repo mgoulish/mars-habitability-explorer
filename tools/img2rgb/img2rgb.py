@@ -1,5 +1,6 @@
 #! /usr/bin/python
 
+import sys
 from PIL import Image
 
 
@@ -9,7 +10,8 @@ from PIL import Image
 # one pixel per line in scanline order,
 # R G B.
 
-img = Image.open ( '../../data/mola/data.jpg', 'r')
+file_name = sys.argv[1]
+img = Image.open ( file_name, 'r')
 f = open ( './rgb.txt', "w" )
 f.write ( f"{img.size[0]} {img.size[1]}\n" )
 for pixel in list ( img.getdata() ) :
