@@ -1,0 +1,13 @@
+
+caves.tif is an image created from CSV data supplied by 
+//pdsimage2.wr.usgs.gov/Individual_Investigations/mars_mro.odyssey_multi_cavecatalog_cushing_2016/data/
+
+
+hydrated_final.png is a handmade rendition of the data in the image at
+//sci.esa.int/web/mars-express/-/51857-mars-hydrated-mineral-map
+
+
+Both images are 3600x1800 Mercator projections, so each pixel is 0.1 
+degrees in both dimensions. At the equator, this makes each pixel about 
+6 km square.
+
