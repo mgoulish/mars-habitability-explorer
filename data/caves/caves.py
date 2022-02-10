@@ -21,5 +21,5 @@ for line in lines :
   lat   = 180 - int((float(words[2])+90.0) * 10)
   pixels [ long, lat ] = ( 255, 255, 255 )
 
-img.save ( "img.tif" )
+img.save ( "caves.tif" )
 
