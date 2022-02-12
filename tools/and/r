@@ -1,0 +1,4 @@
+#! /bin/bash
+
+./and.py ../../data/caves/caves.tif  ../../data/hydrated/hydrated_final.png
+
