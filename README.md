@@ -9,16 +9,19 @@ This has only been tested with the MOLA dataset so far.
 | Dataset | Size | Link|
 |---------|------|--------------------------------------------------------------------------------|
 | MOLA    | 2G   | https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif |
+| Open Mars | 32G | |
 
-## Installation
+## Explorer GUI
 
-### Prerequisites
+### Installation
+
+#### Prerequisites
 
 1. Python 3.8 or higher
 2. Datasets to load
 3. Access to the TkInter backend (others may be supported by accident)
 
-### Virtual Environment and Libraries
+#### Virtual Environment and Libraries
 
 Download the code and make a new environment for running
 
@@ -35,7 +38,7 @@ source habitability/bin/activate
 pip install -r requirements.txt
 ```
 
-## Running
+### Running
 
 The application uses a `config.json` file to figure out where the datasets are.
 Download the datasets onto your computer and update the `config.json` file to point to the location of those datasets.
@@ -58,3 +61,15 @@ The plot space should be interactive and allow for zooming in and moving around.
 
 When done, click `exit`.
 
+## Open Mars Reductions
+
+In `tools/open_mars` we have some tools that were used to generate global statistics on the entire OpenMars dataset.
+The pieces that we care about for this project are:
+
+| Variable | Description                       | Units |
+|----------|-----------------------------------|-------|
+| ps       | Surface Pressure                  | Pa    |
+| tsurf    | Surface Temperature               | K     |
+| dustcol  | Visible column dust optical depth | NU    |
+| u        | Zonal wind (Eastward)             | m/s   |
+| v        | Zonal wind (Northward)            | m/s   |
